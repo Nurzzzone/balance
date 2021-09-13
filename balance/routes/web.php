@@ -17,9 +17,3 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::view('/', 'home')->name('homepage');
-
-
-Route::get('login', [LoginController::class, 'showLoginForm'])->name('auth.login.form');
-Route::post('login', [LoginController::class, 'login'])->name('auth.login');
-Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('admin.register.form');
-Route::post('register', [RegisterController::class, 'register'])->name('auth.register');
